@@ -7,15 +7,27 @@ h1 {
 ul.posts {
 	list-style: none;
 	.post {
+		.post-header {
+			float: left;
+			width: 10%;
+		}
+		.post-body {
+			float: left;
+			width: 70%;
+		}
+		.post-timestamp {
+			float: right;
+			font-style: italic;
+			text-align:  right;
+//			vertical-align: bottom;
+			width: 20%;
+		}
 		background-color: #aaa;
 		border-radius: 5px;
 		padding-left: 10px;
-		.post-header {
-			float: left;
-		}
-		.post-body {
-
-		}
+		padding-right: 10px;
+		margin: 2px;
+		min-height: 60px;
 	}
 }
 
