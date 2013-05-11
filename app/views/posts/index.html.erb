@@ -4,9 +4,11 @@
   <%= link_to 'Add Post', new_post_path %>
   <% @posts.reverse.each do |post| %>
     <li class="post">
-      <div class="post-header"><h2>#<%= post.id %></h2></div>
-      <div class="post-body"><%= post.content %></div>
-      <div class="post-timestamp"><%= post.created_at %></div>
+      <div class="row">
+        <div class="span1"><h2>#<%= post.id %></h2></div>
+        <div class="span9"><%= post.content %></div>
+        <div class="span2 post-timestamp"><%= post.created_at %></div>
+      </div>
     </li>
   <% end %>
 </ul>
